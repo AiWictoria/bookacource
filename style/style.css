@@ -1,7 +1,9 @@
 /****************************************    HEADER    ****************************************/
 /**---------------------------------------  BIGSCREEN  --------------------------------------**/
-html {
+* {
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 header {
@@ -15,12 +17,18 @@ header {
     font-weight: 400;
     font-style: italic;
 }
-
+hr {
+    width: 90%;
+    background-color: #3D0A06;
+    padding: 1px;
+    border: none;
+    justify-content: center;
+}
     header h1 {
         font-size: 500%;
         text-align: center;
         padding: 60px;
-        margin: 20px;
+        margin: 40px;
     }
 
 .headerimg {
@@ -31,19 +39,18 @@ header {
     top: auto;
     left: auto;
     z-index: -1;
-    -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);
+    -webkit-mask-image: linear-gradient(#000000, transparent);
+    mask-image: linear-gradient(#000000, transparent);
 }
 
 .menuitem {
-    border-radius: 10px;
-    background: radial-gradient(#A57960,#3D0A06);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #EEE9D6;
     text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 200%;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
+    box-shadow: 100px;
     z-index: 1;
 }
 
@@ -52,8 +59,11 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.mobilemenu {
+    display: none;
 }
 
 /**------------------------------------------------------------------------------------------**/
@@ -83,6 +93,9 @@ header {
         padding: 5px;
         margin: 5px;
     }
+    .mobilemenu {
+        display: none;
+    }
 }
 /**------------------------------------------------------------------------------------------**/
 /**--------------------------------------  SMALLSCREEN  -------------------------------------**/
@@ -91,27 +104,121 @@ header {
         height: 100px;
     }
     .headerimg {
-        height: 100px;
-    }
-
-    header h1 {
-        font-size: 150%;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .menuitem {
         display: none;
     }
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+    header h1 {
+        display:none;
+        font-size: 150%;
         padding: 10px;
         margin: 10px;
+        z-index: -1;
+    }
+
+    .menuitem {
+        font-size: 30%;
+        display: block;
+        padding: 5px;
+    }
+
+    .container {
+        display: none;
+     /*   flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 10px;*/
+    }
+    .mobilemenu{
+        display: block;
     }
 }
+/**------------------------------------------------------------------------------------------**/
+/**-------------------------------------  HAMBURGER MENU ------------------------------------**/
+a {
+    color: #EEE9D6;
+    padding: 10px;
+}
+
+    a:visited {
+        color: #EEE9D6;
+    }
+
+    a:hover {
+        background-color: dimgrey;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+
+.off-screen-menu {
+    background: linear-gradient(to bottom, #000000,#000000, transparent);
+    width: 100%;
+    position: fixed;
+    top: -450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 300%;
+    transition: .2s ease;
+}
+
+    .off-screen-menu.active {
+       top: 0;
+    }
+
+nav {
+    padding: 10px;
+    display: flex;
+    margin:5px;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background: #EEE9D6;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+        .ham-menu span:nth-child(1) {
+            top: 25%;
+        }
+
+        .ham-menu span:nth-child(3) {
+            top: 75%;
+        }
+
+    .ham-menu.active span {
+        background-color: #EEE9D6;
+    }
+
+        .ham-menu.active span:nth-child(1) {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .ham-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .ham-menu.active span:nth-child(3) {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
 /**------------------------------------------------------------------------------------------**/
 /**********************************************************************************************/
 
@@ -122,10 +229,6 @@ body {
     color: #EEE9D6;
 }
 
-.padding {
-    padding: 100px;
-    margin: 0;
-}
 /************************************************************************************/
 /****************************************    Färger    ****************************************
     #A57960 Beige
@@ -137,15 +240,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
+    #291f02
 
 ***********************************************************************************/
