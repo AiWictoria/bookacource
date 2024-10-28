@@ -8,6 +8,7 @@
 header a {
     color: #EEE9D6;
     padding: 10px;
+    text-shadow: 2px 2px #000000;
 }
     a:visited {
         color: #EEE9D6;
@@ -16,6 +17,7 @@ a:hover {
     border-radius: 30px;
     color: #A15D26;
     padding: 10px;
+    text-shadow: 2px 2px #000000, 0 0 1em gray;
 }
 header {
     width: 100%;
@@ -35,12 +37,18 @@ hr {
     border: none;
     justify-content: center;
 }
+@font-face {
+    font-family: snellroundhand;
+    src: url(fonts/snellbtbold.otf);
+}
 header h1 {
     font-size: 500%;
     text-align: center;
+    color: #A15D26;
     font-family: "Permanent Marker", Arial, sans-serif;
     padding: 60px;
     margin: 40px;
+    text-shadow: 4px 4px #000000;
 }
     .headerimg {
     width: 100%;
@@ -76,7 +84,7 @@ header h1 {
 }
 /**------------------------------------------------------------------------------------------**/
 /**--------------------------------------  MIDIUMSCREEN  ------------------------------------**/
-@media screen and (max-width:1024px) {
+@media screen and (max-width:990px) {
     header {
         height: 225px;
     }
@@ -104,7 +112,7 @@ header h1 {
 }
 /**------------------------------------------------------------------------------------------**/
 /**--------------------------------------  SMALLSCREEN  -------------------------------------**/
-@media screen and (max-width:480px) {
+@media screen and (max-width:550px) {
     header {
         height: 150px;
     }
