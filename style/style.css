@@ -8,7 +8,6 @@
 header a {
     color: #EEE9D6;
     padding: 10px;
-    text-shadow: 2px 2px #000000;
 }
     a:visited {
         color: #EEE9D6;
@@ -17,7 +16,7 @@ a:hover {
     border-radius: 30px;
     color: #A15D26;
     padding: 10px;
-    text-shadow: 2px 2px #000000, 0 0 1em gray;
+    text-shadow: 1px 0 black ,0 0 1em gray;
 }
 header {
     width: 100%;
@@ -26,9 +25,9 @@ header {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-style: italic;
+    font-family: "Merriweather", serif, Arial, sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 hr {
     width: 90%;
@@ -43,6 +42,8 @@ header h1 {
     text-align: center;
     color: #A15D26;
     font-family: "permanent marker", Arial, sans-serif;
+    font-style: italic;
+    font-weight:800;
     padding: 60px;
     margin: 40px;
     text-shadow: 2px 2px black, 0 0 10px black,0 0 50px orange, 0 0 60px #fff, 0 0 70px #A15D26;
@@ -140,7 +141,7 @@ header h1 {
 }
 /**------------------------------------------------------------------------------------------**/
 /**-------------------------------------  OFFSCREENMENU -------------------------------------**/
-.off-screen-menu {
+.offscreenmenu {
     background: linear-gradient(to bottom, #000000,#000000, transparent);
     width: 100%;
     position: fixed;
@@ -154,7 +155,7 @@ header h1 {
     transition: .2s ease;
     padding-bottom: 100px;
 }
-    .off-screen-menu.active {
+    .offscreenmenu.active {
         top: 0;
     }
 /**------------------------------------------------------------------------------------------**/
@@ -164,13 +165,13 @@ nav {
     display: flex;
     margin: 5px;
 }
-.ham-menu {
+.hammenu {
     height: 50px;
     width: 40px;
     margin-left: auto;
     position: relative;
 }
-        .ham-menu span {
+        .hammenu span {
             height: 5px;
             width: 100%;
             background: repeating-radial-gradient(#A15D26, transparent);
@@ -181,21 +182,21 @@ nav {
             transform: translate(-50%, -50%);
             transition: .3s ease;
         }
-                .ham-menu span:nth-child(1) {
+                .hammenu span:nth-child(1) {
             top: 25%;
         }
-        .ham-menu span:nth-child(3) {
+        .hammenu span:nth-child(3) {
             top: 75%;
         }
             
-        .ham-menu.active span:nth-child(1) {
+        .hammenu.active span:nth-child(1) {
             top: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
         }
-                .ham-menu.active span:nth-child(2) {
+                .hammenu.active span:nth-child(2) {
             opacity: 0;
         }
-        .ham-menu.active span:nth-child(3) {
+        .hammenu.active span:nth-child(3) {
             top: 50%;
             transform: translate(-50%, -50%) rotate(-45deg);
         }
