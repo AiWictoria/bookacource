@@ -6,9 +6,8 @@
     text-decoration: none;
 }
 
-header a {
+a {
     color: #EEE9D6;
-    padding: 10px;
 }
 
 a:visited {
@@ -18,7 +17,6 @@ a:visited {
 a:hover {
     border-radius: 30px;
     color: #A15D26;
-    padding: 10px;
     text-shadow: 1px 0 black,0 0 1em gray;
 }
 
