@@ -3,10 +3,49 @@
 <head>
     <title>Kurser och tjänster</title>
     <meta charset="utf-8">
+    <link rel="icon" href="../img/icon.ico">
+    <link href="../style/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif+Caption:ital@0;1&family=Permanent+Marker&family=Rozha+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!--Meny i header, ska vara samma på varje sida-->
     <header>
+        <img class="headerimg" src="../img/ramenheaderimg.jpg" alt="ramen header image">
+        <h1 class="glow">Zen Cooking Studio</h1>
+        <div class="mobilemenu" hidden>
+            <div class="offscreenmenu">
+                <ul>
+                    <li class="menuitem"><a href="../index.html">Start</a></li>
+                    <li class="menuitem"><a href="service.html">Utbud</a></li>
+                    <li class="menuitem"><a href="booking.html">Boka nu</a></li>
+                    <li class="menuitem"><a href="../info/about.html">Om oss</a></li>
+                </ul>
+            </div>
+
+            <nav>
+                <img src="../img/logo.png" alt="zen studio logo">
+                <div class="hammenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <script src=".././app.js"></script>
+        </div>
+        <hr>
+        <div>
+            <div class="containerheader">
+                <div class="menuitem"><a href="../index.html">Start</a></div>
+                <div class="menuitem"><a href="service.html">Utbud</a></div>
+                <div class="menuitem"><a href="booking.html">Boka nu</a></div>
+                <div class="menuitem"><a href="../info/about.html">Om oss</a></div>
+            </div>
+        </div>
     </header>
     <!--innehåll-->
     <main>
@@ -80,8 +119,34 @@
             </ul>
         </section>
     </main>
-    <!--footer ska vara samma på alla sidor-->
+    <div class="wave">
+        <svg viewBox="0 0 600 100">
+            <path d="M0,50 C200,100,400,0,600,50 S600,50 600,75 L600,100 L0,100 Z"></path>
+        </svg>
+    </div>
     <footer>
+        <div class="containerfooterrow">
+            <div class="containerfootercontact">
+                <h2>Kontakt</h2>
+                <div class="footeritem">Telefon: <a href="tel:0700000000">070-000 00 00</a></div>
+                <div class="footeritem">Mail: <a href="mailto:info@zencooking.com?subject=Meddelande">info@zencooking.com</a></div>
+                <div class="footeritem"><a href="../info/contact.html">Kontakta oss</a></div>
+            </div>
+            <div class="containerfooterinfo">
+                <h2>Information</h2>
+                <div class="footeritem"><a href="../info/about.html">Om oss</a></div>
+                <div class="footeritem"><a href="../info/contact.html">Hitta hit</a></div>
+                <div class="footeritem"><a href="#">Sitemap</a></div> <!-- Länk till SITEMAP-->
+            </div>
+            <div class="containerfooterinfo">
+                <h2>Utbud</h2>
+                <div class="footeritem"><a href="service.html#cources">Kurser</a></div>
+                <div class="footeritem"><a href="service.html#services">Tjänster</a></div>
+            </div>
+        </div>
+        <div class="containerfootercopy">
+            <p>&copy; 2024 Zen Cooking Studio. Alla rättigheter förbehållna.</p>
+        </div>
     </footer>
 </body>
 </html>
