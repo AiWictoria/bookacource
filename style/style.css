@@ -87,8 +87,6 @@ header h1 {
     display: none;
 }
 /**------------------------------------------------------------------------------------------**/
-
-
 /**-------------------------------------  OFFSCREENMENU -------------------------------------**/
 .offscreenmenu {
     background: linear-gradient(to bottom, #000000,#000000, transparent);
@@ -170,7 +168,8 @@ footer {
 }
 
     footer h2 {
-        font-size: 20px;
+        font-size: 32px;
+        margin-top: 5px;
     }
 
     footer p {
@@ -184,14 +183,12 @@ footer {
 }
 
 .containerfooterrow {
-    justify-content: space-around;
+    justify-content:  flex-end;
     align-content: center;
     display: flex;
     background-color: #080203;
     flex-direction: row;
-    padding: 10px;
-    margin-top: 10px;
-    volume: 3;
+    padding: 5px;
 }
 
 .containerfootercontact {
@@ -201,7 +198,10 @@ footer {
     background-color: #080203;
     flex-direction: column;
     padding: 10px;
+    padding-left: 75px;
     height: 30%;
+    font-size: 22px;
+    flex-grow: 50;
 }
 
 .containerfooterinfo {
@@ -211,7 +211,10 @@ footer {
     background-color: #080203;
     flex-direction: column;
     padding: 10px;
+    padding-right: 100px;
     height: 30%;
+    font-size: 22px;
+    flex-grow: 10;
 }
 
 .containerfootercopy {
@@ -223,10 +226,14 @@ footer {
     padding-right: 10px;
     height: 20%;
     margin-bottom: 0;
-    padding-bottom: 0;
 }
 
-
+.wave {
+    position: relative;
+    bottom: -30px;
+    fill:#080203;
+    z-index: -1;
+}
 
 
 /**********************************************************************************************/
@@ -293,6 +300,7 @@ body {
 
     .containerfootercontact {
         padding: 10px;
+        padding-left: 50px;
         font-size: 15px;
     }
 
@@ -347,11 +355,13 @@ body {
 
     .containerfooterinfo {
         padding: 5px;
+        padding-right: 15px;
         font-size: 10px;
     }
 
     .containerfootercontact {
         padding: 5px;
+        padding-left: 15px;
         font-size: 10px;
     }
 
@@ -364,10 +374,17 @@ body {
     }
 
     .containerfooterrow {
-        padding: 5px;
+        padding: 2px;
+        justify-content: flex-start;
     }
     .containerfootercopy {
         height: 30px;
+    }
+    .wave {
+        position: relative;
+        bottom: -20px;
+        fill: #080203;
+        z-index: -1;
     }
 }
 /**------------------------------------------------------------------------------------------**/
