@@ -30,6 +30,8 @@ header {
     font-family: "Merriweather", serif, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 hr {
@@ -41,14 +43,14 @@ hr {
 }
 
 header h1 {
-    font-size: 500%;
+    font-size: 600%;
     text-align: center;
     color: #A15D26;
     font-family: "permanent marker", Arial, sans-serif;
     font-style: italic;
     font-weight: 800;
-    padding: 60px;
-    margin: 40px;
+    padding: 50px;
+    margin: 30px;
     text-shadow: 2px 2px black, 0 0 10px black,0 0 50px orange, 0 0 60px #fff, 0 0 70px #A15D26;
 }
 
@@ -85,6 +87,7 @@ header h1 {
 .mobilemenu {
     display: none;
 }
+
 /**------------------------------------------------------------------------------------------**/
 /**-------------------------------------  OFFSCREENMENU -------------------------------------**/
 .offscreenmenu {
@@ -170,7 +173,7 @@ footer {
         margin-top: 5px;
     }
 
-    footer p {
+    footer p{
         font-size: 10px;
         justify-content: right;
         flex-direction: column-reverse;
@@ -216,7 +219,7 @@ footer {
 }
 
 .containerfootercopy {
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     display: flex;
     background-color: #080203;
@@ -232,13 +235,45 @@ footer {
     fill:#080203;
     z-index: -1;
 }
-
-
 /**********************************************************************************************/
+
+/***************************************** CONTENT ********************************************/
+
+.containercourses {
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    display: flex;
+    background: linear-gradient(transparent, black, transparent);
+}
+.selectedserviceitem {
+    width: 100%;
+    max-width: 900px; 
+    height: auto; 
+    padding: 50px;
+    border-radius: 50%;
+    font-size: 275%;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
 body {
     background: linear-gradient(to bottom, #000000, #EEE9D6);
     margin: 0;
     color: #EEE9D6;
+}
+main h2 {
+    text-align: center;
+    font-size: 350%;
+    font-family: "Merriweather", serif, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom:50px;
+    padding-top:100px;
+}
+main p {
+    font-size: 225%;
+    padding: 25px;
 }
 
 /************************************************************************************/
@@ -260,7 +295,7 @@ body {
 
 
 /**--------------------------------------  MIDIUMSCREEN  ------------------------------------**/
-@media screen and (max-width:990px) {
+@media screen and (max-width:1120px) {
     header {
         height: 225px;
     }
@@ -270,8 +305,10 @@ body {
     }
 
     header h1 {
-        font-size: 250%;
-        padding: 30px;
+        font-size: 300%;
+        padding: 0;
+        padding-bottom: 25px;
+        padding-top: 25px;
         margin: 5px;
     }
 
@@ -313,12 +350,28 @@ body {
     .containerfooterrow {
         padding: 10px;
     }
+    main h2 {
+        font-size: 200%;
+        padding: 25px;
+    }
+    .selectedserviceitem {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 180%;
+    }
+    main p {
+        font-size: 140%;
+        padding: 18px;
+    }
 }
 /**------------------------------------------------------------------------------------------**/
 /**--------------------------------------  SMALLSCREEN  -------------------------------------**/
 @media screen and (max-width:550px) {
     header {
         height: 150px;
+        padding-bottom: 0;
+        margin: 0;
     }
 
     .headerimg {
@@ -383,6 +436,26 @@ body {
         bottom: -20px;
         fill: #080203;
         z-index: -1;
+    }
+    main h2 {
+        font-size: 125%;
+        padding: 10px;
+    }
+    .containercourses {
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .selectedserviceitem {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 125%;
+    }
+    main p {
+        font-size: 100%;
+        padding: 10px;
     }
 }
 /**------------------------------------------------------------------------------------------**/

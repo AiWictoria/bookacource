@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-
     <title>Zen Cooking</title>
     <meta charset="utf-8">
-
     <link rel="icon" href="img/icon.ico">
     <link href="style/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif+Caption:ital@0;1&family=Permanent+Marker&family=Rozha+One&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-    <!--Meny i header, ska vara samma på varje sida-->
     <header>
         <img class="headerimg" src="img/ramenheaderimg.jpg" alt="ramen header image">
         <h1 class="glow">Zen Cooking Studio</h1>
@@ -29,7 +23,6 @@
                     <li class="menuitem"><a href="info/about.html">Om oss</a></li>
                 </ul>
             </div>
-
             <nav>
                 <img src="img/logo.png" alt="zen studio logo">
                 <div class="hammenu">
@@ -38,7 +31,6 @@
                     <span></span>
                 </div>
             </nav>
-
             <script src="./app.js"></script>
         </div>
         <hr>
@@ -51,50 +43,41 @@
             </div>
         </div>
     </header>
-    <!--innehåll-->
     <main>
         <section>
-            <!--Kort om företaget-->
             <h2>
                 Välkommen till Zen Cooking Studio!
             </h2>
-            <p>
-                Hos Zen Cooking Studio erbjuder vi en unik matlagningsupplevelse med fokus på asiatisk matlagning.
-                Grundat 2022 av en passionerad kock, kombinerar vi traditionella recept med moderna tekniker.
-                Med vår slogan, “In every dish flavors obey, it’s magic Gordon Ramsay’s way!”, strävar vi efter att göra varje lektion till en smakfull resa.
-                Oavsett om du är nybörjare eller erfaren, har vi kurser för alla nivåer. Kom och upptäck glädjen i att laga mat i en inspirerande och stödjande miljö!
-            </p>
+            <p>Hos Zen Cooking Studio erbjuder vi en unik matlagningsupplevelse med fokus på asiatisk matlagning. Grundat 2022 av en passionerad kock, kombinerar vi traditionella recept med moderna tekniker.</p>
+            <p>Med vår slogan, <em> “In every dish flavors obey, it’s magic Gordon Ramsay’s way!”</em>, strävar vi efter att göra varje lektion till en smakfull resa.Oavsett om du är nybörjare eller erfaren, har vi kurser för alla nivåer. Kom och upptäck glädjen i att laga mat i en inspirerande och stödjande miljö!</p>
         </section>
         <section>
-            <!--Kurser-->
             <h2>Utvalda kurser</h2>
-            <table>
-                <tr>
-                    <td><!--Bild till sushi--></td>
-                    <td><!--Bild wok--></td>
-                </tr>
-                <tr>
-                    <td>Zen Sushi Masterclass</td>
-                    <td>Wok the Walk: Stir-Fry Essentialss</td>
-                </tr>
-            </table>
+            <div class="containercourses">
+                <div>
+                    <a href="collection/cources/sushimc.html "><img src="img/sushimcimg.jpg" class="selectedserviceitem" alt="sushi master class"></a>
+                    <div class="selectedserviceitem"><a href="collection/cources/sushimc.html ">Zen Sushi Masterclass</a></div>
+                </div>
+                <div>
+                    <img src="img/wok.jpg" class="selectedserviceitem" alt="wok class">
+                    <div class="selectedserviceitem">Wok the Walk: Stir-Fry Essentialss</div>
+                </div>
+            </div>
         </section>
         <section>
-            <!--Tjänster-->
             <h2>Utvalda tjänster</h2>
-            <table>
-                <tr>
-                    <td><!--Bild till kock i hemmet--></td>
-                    <td><!--Bild företagevent--></td>
-                </tr>
-                <tr>
-                    <td>Kock till Hemmet</td>
-                    <td>Företagsevent och Teambuilding</td>
-                </tr>
-            </table>
+            <div class="containercourses">
+                <div>
+                    <a href="collection/services/homechef.html "><img src="img/homechefimg.jpg" class="selectedserviceitem" alt="home chef image"></a>
+                    <div class="selectedserviceitem"><a href="collection/services/homechef.html ">Kock till Hemmet</a></div>
+                </div>
+                <div>
+                    <img src="img/businessevent.jpg" class="selectedserviceitem" alt="wok class">
+                    <div class="selectedserviceitem">Företagsevent och Teambuilding</div>
+                </div>
+            </div>
         </section>
     </main>
-    <!--footer ska vara samma på alla sidor-->
     <div class="wave">
         <svg viewBox="0 0 600 100">
             <path d="M0,50 C200,100,400,0,600,50 S600,50 600,75 L600,100 L0,100 Z"></path>
@@ -116,7 +99,7 @@
             </div>
             <div class="containerfooterinfo">
                 <h2>Utbud</h2>
-                <div class="footeritem"><a href="collection/service.html#cources">Kurser</a></div>
+                <div class="footeritem"><a href="collection/service.html#courses">Kurser</a></div>
                 <div class="footeritem"><a href="collection/service.html#services">Tjänster</a></div>
             </div>
         </div>
