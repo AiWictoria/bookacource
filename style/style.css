@@ -298,6 +298,7 @@ main h3 {
 .courcecontent {
     justify-content: space-evenly;
     align-content: center;
+    align-items: center;
     flex-direction: row;
     display: flex;
     text-align: center;
@@ -344,6 +345,13 @@ li {
     justify-content: flex-start;
     flex-direction: row;
     display: flex;
+}
+article p {
+    font-size: 100%;
+    margin: 0;
+}
+adress{
+    padding: 10px;
 }
 
 /************************************************************************************/
