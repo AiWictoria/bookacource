@@ -48,12 +48,13 @@
             </div>
         </div>
     </header>
-    <!--innehåll-->
+
+
     <main>
         <section>
             <h2>Boka nu</h2>
-            <p>Välj en kurs/tjänst</p>
-            <select list="services" name="service" required form="bookservice">
+            <p>Välj en kurs/tjänst *</p>
+            <select list="services" name="service" required form="bookservice" class="formitem">
                 <option value="zen sushi">Zen Sushi Masterclass</option>
                 <option value="">Wok the Walk: Stir-Fry Essentialss</option>
                 <option value="">Dumpling Delights</option>
@@ -65,16 +66,27 @@
             </select>
             <form action="..\info\confirmation.html" method="post" id="bookservice">
                 <p>Vänligen ange följande information för att slutföra bokningen</p>
-                <input type="text" name="name" placeholder="Namn Efternamn" required>
-                <input type="tel" name="phone" placeholder="070-000 00 00" required>
-                <input type="email" name="email" placeholder="exampel@mail.com" required>
-                <input type="date" name="date" required>
+              
+                        <p>Namn *</p>
+                        <input type="text" name="name" placeholder="Namn Efternamn" required class="formitem">
+         
+                        <p>Telefonnummer *</p>
+                        <input type="tel" name="phone" placeholder="070-000 00 00" required class="formitem">
+      
+                        <p>Mailadress *</p>
+                        <input type="email" name="email" placeholder="exampel@mail.com" required class="formitem">
+    
+                        <p>Datum för kurs *</p>
+                        <input type="date" name="date" required class="formitem">
+
                 <p>Meddelande (Valfritt)</p>
-                <input type="text" name="comment">
-                <input type="submit" name="submit">
+                <input type="text" name="comment" class="messageitem">
+                <input type="submit" name="submit" class="submititem">
             </form>
         </section>
     </main>
+
+
     <div class="wave">
         <svg viewBox="0 0 600 100">
             <path d="M0,50 C200,100,400,0,600,50 S600,50 600,75 L600,100 L0,100 Z"></path>
