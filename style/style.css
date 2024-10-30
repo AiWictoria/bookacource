@@ -240,7 +240,7 @@ footer {
 /***************************************** CONTENT ********************************************/
 
 .containercourses {
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
     display: flex;
@@ -248,36 +248,70 @@ footer {
 }
 .selectedserviceitem {
     width: 100%;
-    max-width: 900px; 
+    max-width: 650px; 
     height: auto; 
-    padding: 50px;
+    padding: 40px;
     border-radius: 50%;
     font-size: 275%;
     text-align: center;
     text-shadow: 2px 2px black;
+    align-items: center;
 }
 
 body {
-    background: linear-gradient(to bottom, #000000, #EEE9D6);
+    background: linear-gradient(to bottom, #080203, #000000, #EEE9D6);
     margin: 0;
     color: #EEE9D6;
+    font-family: "Merriweather", serif, Arial, sans-serif;
+    text-shadow: 0 0 30px black;
 }
 main h2 {
     text-align: center;
-    font-size: 350%;
-    font-family: "Merriweather", serif, Arial, sans-serif;
+    font-size: 275%;
     font-weight: 400;
     font-style: normal;
     padding-bottom:50px;
     padding-top:100px;
 }
 main p {
-    font-size: 225%;
-    padding: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
+    font-size: 150%;
+    padding: 20px;
+    align-content:center;
+}
+main h3 {
+    text-align: center;
+    font-size: 230%;
+    font-weight: 300;
+    font-style: normal;
+    padding: 40px 0 30px 0;
+    margin: 0;
 }
 
+.containercolumn{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 30px 0px 30px 0px;
+}
+.courcecontent {
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+    .courcecontent > p, .courcecontent > div {
+        flex: 1;
+    }
+.backgroundcgreen {
+    background: linear-gradient(#091A00, transparent, #091A00);
+}
+li {
+    font-size: 150%;
+    padding: 10px;
+    margin: 10px;
+}
 /************************************************************************************/
 /****************************************    Färger    ****************************************
     #A57960 Beige
@@ -356,6 +390,12 @@ main p {
         font-size: 200%;
         padding: 25px;
     }
+    .containercourses {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  display: flex;
+    }
     .selectedserviceitem {
         width: 100%;
         height: auto;
@@ -363,8 +403,22 @@ main p {
         font-size: 180%;
     }
     main p {
-        font-size: 140%;
-        padding: 18px;
+        font-size: 110%;
+        padding: 10px;
+    }
+    main h3 {
+        font-size: 125%;
+        font-style: normal;
+        padding: 20px 0 20px 0;
+    }
+    .courcecontent {
+        flex-direction: column;
+        padding: 25px;
+    }
+    li {
+        font-size: 110%;
+        padding: 7px;
+        margin: 7px;
     }
 }
 /**------------------------------------------------------------------------------------------**/
@@ -456,8 +510,22 @@ main p {
         font-size: 125%;
     }
     main p {
-        font-size: 100%;
+        font-size: 90%;
         padding: 10px;
+        margin: 5px;
+    }
+    main h3 {
+        font-size: 110%;
+        padding: 10px 0 10px 0;
+    }
+    .courcecontent {
+        flex-direction: column;
+        padding: 15px;
+    }
+    li {
+        font-size: 90%;
+        padding: 5px;
+        margin: 5px;
     }
 }
 /**------------------------------------------------------------------------------------------**/
