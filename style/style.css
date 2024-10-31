@@ -367,13 +367,12 @@ ul {
 }
 
 .bookingitem {
-    padding: 40px;
+    padding: 30px;
     text-align: left;
 }
 .bookingpaddings {
-    padding: 50px;
-    margin-left: 50px;
-    background-color: black;
+    padding: 25px;
+    margin-left: 20px;
     width: fit-content;
     border-radius: 50px;
 }
