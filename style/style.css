@@ -356,6 +356,21 @@ adress{
 ul {
     padding: 10px;
 }
+label {
+    font-size: 20px;
+    padding: 10px;
+}
+.lableitem {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.selectwrap {
+    padding: 10px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
 /**********************************************************************************************/
 /***************************************** BOOKING ********************************************/
 
@@ -576,12 +591,11 @@ td {
         padding: 2px;
         border-radius: 10px;
         width: 600px;
-        height: 250px;
-        font-size: 80%;
+        font-size: 70%;
     }
 
     td {
-        padding: 7px;
+        padding: 5px;
         border-radius: 5px;
     }
 
@@ -591,6 +605,13 @@ td {
 
     .scheduledcource {
         border-radius: 5px;
+    }
+    label {
+        font-size: 15px;
+    }
+    .lableitem {
+        font-size: 15px;
+        padding: 10px;
     }
 }
 /**------------------------------------------------------------------------------------------**/
@@ -723,10 +744,10 @@ td {
     }
 
     .containerbooking {
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: column;
         display: flex;
-        align-items: flex-start;
+        align-items: self-start;
     }
 
     .bookingpaddings {
@@ -747,5 +768,17 @@ td {
     .bookingwrap{
         margin: 5px;
     }
-}
+    label {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .lableitem {
+        font-size: 10px;
+        padding: 10px;
+    }
+    .selectwrap {
+        padding: 10px;
+        flex-direction: row;
+    }
+  }
 /**------------------------------------------------------------------------------------------**/
