@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'
+	 xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	 xsi:schemaLocation='http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd'>
+<!-- Created with WriteMaps: An Online Website Planner and Sitemap Generator https://app.writemaps.com -->
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/index.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/info/contact.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/collection/service.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/collection/cources/sushimc.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/collection/services/homechef.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/collection/booking.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/info/confirmation.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aiwictoria.github.io/bookacource/info/about.html</loc>
+		<lastmod>2024-10-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+</urlset>
