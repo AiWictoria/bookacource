@@ -35,7 +35,6 @@
                     <span></span>
                 </div>
             </nav>
-
             <script src=".././app.js"></script>
         </div>
         <hr>
@@ -49,43 +48,112 @@
         </div>
     </header>
 
-
     <main>
         <section>
             <h2>Boka nu</h2>
-            <p>Välj en kurs/tjänst *</p>
-            <select list="services" name="service" required form="bookservice" class="formitem">
-                <option value="zen sushi">Zen Sushi Masterclass</option>
-                <option value="">Wok the Walk: Stir-Fry Essentialss</option>
-                <option value="">Dumpling Delights</option>
-                <option value="">Pho-nomenal Soup Making</option>
-                <option value="">Kock till Hemmet</option>
-                <option value="">Företagsevent och Teambuilding</option>
-                <option value="">Privat Matlagningskurs</option>
-                <option value="">Catering med Asiatisk Touch</option>
-            </select>
-            <form action="..\info\confirmation.html" method="post" id="bookservice">
-                <p>Vänligen ange följande information för att slutföra bokningen</p>
-              
-                        <p>Namn *</p>
-                        <input type="text" name="name" placeholder="Namn Efternamn" required class="formitem">
-         
-                        <p>Telefonnummer *</p>
-                        <input type="tel" name="phone" placeholder="070-000 00 00" required class="formitem">
-      
-                        <p>Mailadress *</p>
-                        <input type="email" name="email" placeholder="exampel@mail.com" required class="formitem">
-    
-                        <p>Datum för kurs *</p>
-                        <input type="date" name="date" required class="formitem">
+            <div class="bookingwrap">
+                <form action="..\info\confirmation.html" method="post" id="bookservice">
+                    <p>Välj en kurs/tjänst *</p>
+                    <div class="bookingitem">
+                        <select list="services" name="service" required form="bookservice" class="formitem">
+                            <option value="zen sushi">Zen Sushi Masterclass</option>
+                            <option value="">Wok the Walk: Stir-Fry Essentialss</option>
+                            <option value="">Dumpling Delights</option>
+                            <option value="">Pho-nomenal Soup Making</option>
+                            <option value="">Kock till Hemmet</option>
+                            <option value="">Företagsevent och Teambuilding</option>
+                            <option value="">Privat Matlagningskurs</option>
+                            <option value="">Catering med Asiatisk Touch</option>
+                        </select>
+                    </div>
+                    <p>Vänligen ange följande information för att slutföra bokningen</p>
 
-                <p>Meddelande (Valfritt)</p>
-                <input type="text" name="comment" class="messageitem">
-                <input type="submit" name="submit" class="submititem">
-            </form>
+                    <div class="containerbooking">
+                        <div class="bookingitem">
+                            <p>Namn *</p>
+                            <input type="text" name="name" placeholder="Namn Efternamn" required class="formitem">
+                        </div>
+
+                        <div class="bookingitem">
+                            <p>Telefonnummer *</p>
+                            <input type="tel" name="phone" placeholder="070-000 00 00" required class="formitem">
+                        </div>
+                    </div>
+
+                    <div class="containerbooking">
+                        <div class="bookingitem">
+                            <p>Mailadress *</p>
+                            <input type="email" name="email" placeholder="exampel@mail.com" required class="formitem ">
+                        </div>
+
+                        <div class="bookingitem">
+                            <p>Datum för kurs *</p>
+                            <input type="date" name="date" required class="formitem">
+                        </div>
+                    </div>
+
+                    <p>Meddelande (Valfritt)</p>
+                    <div class="containerbooking">
+                        <div class="bookingitem"><input type="text" name="comment" class="messageitem"></div>
+                        <div class="bookingitem"> <input type="submit" name="submit" class="submititem"></div>
+                    </div>
+                </form>
+
+                <table>
+                    <tr class="scheduleheads">
+                        <td>Kurs</td>
+                        <td>Måndag</td>
+                        <td>Tisdag</td>
+                        <td>Onsdag</td>
+                        <td>Torsdag</td>
+                        <td>Fredag</td>
+                        <td>Lördag</td>
+                        <td>Söndag</td>
+                    </tr>
+                    <tr>
+                        <td class="scheduleheads">Zen Sushi Masterclass</td>
+                        <td></td>
+                        <td class="scheduledcource">18 - 21</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="scheduledcource">11 - 14</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="scheduleheads">Wok the Walk</td>
+                        <td class="scheduledcource">17 - 19</td>
+                        <td></td>
+                        <td class="scheduledcource">17 - 19</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="scheduleheads">Dumpling Delights</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="scheduledcource">18 - 21</td>
+                        <td></td>
+                        <td class="scheduledcource">11 - 13</td>
+                    </tr>
+                    <tr>
+                        <td class="scheduleheads">Pho-nomenal</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="scheduledcource">17 - 19</td>
+                        <td></td>
+                        <td class="scheduledcource">11 - 13</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
-
 
     <div class="wave">
         <svg viewBox="0 0 600 100">
